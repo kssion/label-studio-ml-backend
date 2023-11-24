@@ -22,8 +22,8 @@ CACHE = create_cache(
 
 
 # Decorator to register predict function
-_predict_fn: Callable
-_update_fn: Callable
+_predict_fn: Optional[Callable] = None
+_update_fn: Optional[Callable] = None
 
 
 def predict_fn(f):
